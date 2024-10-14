@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Name - Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -66,6 +67,20 @@
         button:hover {
             background: #555;
         }
+        .social-icons {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        .social-icons li {
+            margin: 0 10px;
+        }
+        .social-icons a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 24px;
+        }
     </style>
 </head>
 <body>
@@ -113,11 +128,11 @@
 
     <footer>
         <h3>Connect with me:</h3>
-        <ul>
-            <li><a href="https://www.instagram.com/yourusername" target="_blank">Instagram</a></li>
-            <li><a href="https://www.facebook.com/yourusername" target="_blank">Facebook</a></li>
-            <li><a href="https://twitter.com/yourusername" target="_blank">Twitter</a></li>
-            <li><a href="https://www.linkedin.com/in/yourusername" target="_blank">LinkedIn</a></li>
+        <ul class="social-icons">
+            <li><a href="https://www.instagram.com/yourusername" target="_blank" class="fab fa-instagram"></a></li>
+            <li><a href="https://www.facebook.com/yourusername" target="_blank" class="fab fa-facebook"></a></li>
+            <li><a href="https://twitter.com/yourusername" target="_blank" class="fab fa-twitter"></a></li>
+            <li><a href="https://www.linkedin.com/in/yourusername" target="_blank" class="fab fa-linkedin"></a></li>
         </ul>
     </footer>
 
