@@ -3,69 +3,123 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Form</title>
+    <title>Your Name - Portfolio</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
             margin: 0;
-            padding: 20px;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #f4f4f4;
         }
-        .container {
-            max-width: 400px;
-            margin: auto;
-            background: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        h2 {
+        header {
+            background: #333;
+            color: #fff;
+            padding: 20px 0;
             text-align: center;
         }
-        input[type="text"], input[type="tel"], textarea {
-            width: 100%;
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        section {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background: #333;
+            color: #fff;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        input, textarea {
+            margin-bottom: 10px;
             padding: 10px;
-            margin: 10px 0;
             border: 1px solid #ccc;
             border-radius: 4px;
         }
-        input[type="checkbox"] {
-            margin: 10px 0;
-        }
         button {
-            width: 100%;
             padding: 10px;
-            background-color: #28a745;
+            background: #333;
+            color: #fff;
             border: none;
-            color: white;
             border-radius: 4px;
             cursor: pointer;
         }
         button:hover {
-            background-color: #218838;
+            background: #555;
         }
     </style>
 </head>
 <body>
+    <header>
+        <h1>Your Name</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Brief introduction about yourself.</p>
+    </section>
 
-<div class="container">
-    <h2>Contact Form</h2>
-    <form action="#" method="post">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
+    <section id="portfolio">
+        <h2>My Work</h2>
+        <div class="portfolio-items">
+            <!-- Add your portfolio items here -->
+            <p>Project 1</p>
+            <p>Project 2</p>
+            <p>Project 3</p>
+        </div>
+    </section>
 
-        <label for="mobile">Mobile No:</label>
-        <input type="tel" id="mobile" name="mobile" required>
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form action="send_email.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
 
-        <label for="address">Address:</label>
-        <textarea id="address" name="address" rows="3" required></textarea>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
 
-        <input type="checkbox" id="terms" name="terms" required>
-        <label for="terms">I agree to the terms and conditions</label>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
 
-        <button type="submit">Submit</button>
-    </form>
-</div>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <footer>
+        <h3>Connect with me:</h3>
+        <ul>
+            <li><a href="https://www.instagram.com/yourusername" target="_blank">Instagram</a></li>
+            <li><a href="https://www.facebook.com/yourusername" target="_blank">Facebook</a></li>
+            <li><a href="https://twitter.com/yourusername" target="_blank">Twitter</a></li>
+            <li><a href="https://www.linkedin.com/in/yourusername" target="_blank">LinkedIn</a></li>
+        </ul>
+    </footer>
 
 </body>
 </html>
